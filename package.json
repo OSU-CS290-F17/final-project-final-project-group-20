@@ -4,7 +4,10 @@
   "description": "Final project for Group 20",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/charimg.handlebars -f public/js/charimgTemplate.js",
+    "start": "node server.js",
+    "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,9 +20,13 @@
   },
   "homepage": "https://github.com/OSU-CS290-F17/final-project-group-20#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
-    "mongodb": "^2.2.33"
+    "handlebars-loop": "^1.0.3",
+    "mongodb": "^2.2.33",
+    "mysql": "^2.15.0",
+    "sql": "^0.78.0"
   }
 }

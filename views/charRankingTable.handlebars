@@ -1,0 +1,73 @@
+{{> header}}
+{{> menubar}}
+
+<main class="content">
+	{{> filterbox}}
+	<section id="full-table">
+
+		<table id="grand-master-table" class="character-ranking-table">
+			<th id="grand-master-header" colspan="3">Grand Master</th>
+			<tr>
+			{{#each gmList}}
+				{{#modThree @index}}
+					</tr>
+					<tr>
+				{{/modThree}}
+				{{> charimg}}
+			{{/each}}
+			</tr>
+		</table>
+		<table id="master-table" class="character-ranking-table">
+			<th id="master-header" colspan="3">Master</th>
+			<tr>
+			{{#each masterList}}
+				{{#modThree @index}}
+					</tr>
+					<tr>
+				{{/modThree}}
+				{{> charimg}}
+			{{/each}}
+			</tr>
+		</table>
+		<table id="knight-table" class="character-ranking-table">
+			<th id="knight-header" colspan="3">Knight</th>
+			<tr>
+			{{#each knightList}}
+				{{#modThree @index}}
+					</tr>
+					<tr>
+				{{/modThree}}
+				{{> charimg}}
+			{{/each}}
+			<td></td>
+			</tr>
+		</table>
+		<table id="padawan-table" class="character-ranking-table">
+			<th id="padawan-header" colspan="3">Padawan</th>
+			<tr>
+			{{#each padawanList}}
+				{{#modThree @index}}
+					</tr>
+					<tr>
+				{{/modThree}}
+				{{> charimg}}
+			{{/each}}
+			</tr>
+		</table>
+		<table id="youngling-table" class="character-ranking-table">
+			<th id="youngling-header" colspan="3">Youngling</th>
+			<tr>
+			{{#each younglingList}}
+				{{#modThree @index}}
+					</tr>
+					<tr>
+				{{/modThree}}
+				{{> charimg}}
+			{{/each}}
+			</tr>
+		</table>
+		
+    </section>
+</main>
+
+{{> footer}}
