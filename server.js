@@ -17,7 +17,6 @@ app.set('view engine', 'handlebars');
 var con = mysql.createConnection({
 	host: "localhost",
 	user: "hydra314",
-	password: "FCNavy46@",
 	database: "swgoh"
 });
 
